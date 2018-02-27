@@ -1,0 +1,53 @@
+Start testing: Feb 28 00:42 CST
+----------------------------------------------------------
+1/2 Testing: test_scorer
+1/2 Test: test_scorer
+Command: "/usr/bin/python" "/home/recolic/tmp/fast_tffm/test/fm_scorer_op_test.py"
+Directory: /home/recolic/tmp/fast_tffm/build
+"test_scorer" start time: Feb 28 00:42 CST
+Output:
+----------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/recolic/tmp/fast_tffm/test/fm_scorer_op_test.py", line 4, in <module>
+    from fm_ops import fm_ops
+  File "/home/recolic/tmp/fast_tffm/test/../py/fm_ops.py", line 5, in <module>
+    fm_ops = tf.load_op_library(os.path.dirname(os.path.realpath(__file__)) + '/../lib/libfast_tffm.so')
+  File "/usr/lib/python3.6/site-packages/tensorflow/python/framework/load_library.py", line 56, in load_op_library
+    lib_handle = py_tf.TF_LoadLibrary(library_filename, status)
+  File "/usr/lib/python3.6/site-packages/tensorflow/python/framework/errors_impl.py", line 473, in __exit__
+    c_api.TF_GetCode(self.status.status))
+tensorflow.python.framework.errors_impl.NotFoundError: /home/recolic/tmp/fast_tffm/py/../lib/libfast_tffm.so: undefined symbol: _ZTIN10tensorflow8OpKernelE
+<end of output>
+Test time =   1.36 sec
+----------------------------------------------------------
+Test Failed.
+"test_scorer" end time: Feb 28 00:42 CST
+"test_scorer" time elapsed: 00:00:01
+----------------------------------------------------------
+
+2/2 Testing: test_parser
+2/2 Test: test_parser
+Command: "/usr/bin/python" "/home/recolic/tmp/fast_tffm/test/fm_parser_op_test.py"
+Directory: /home/recolic/tmp/fast_tffm/build
+"test_parser" start time: Feb 28 00:42 CST
+Output:
+----------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/recolic/tmp/fast_tffm/test/fm_parser_op_test.py", line 6, in <module>
+    from fm_ops import fm_ops
+  File "/home/recolic/tmp/fast_tffm/test/../py/fm_ops.py", line 5, in <module>
+    fm_ops = tf.load_op_library(os.path.dirname(os.path.realpath(__file__)) + '/../lib/libfast_tffm.so')
+  File "/usr/lib/python3.6/site-packages/tensorflow/python/framework/load_library.py", line 56, in load_op_library
+    lib_handle = py_tf.TF_LoadLibrary(library_filename, status)
+  File "/usr/lib/python3.6/site-packages/tensorflow/python/framework/errors_impl.py", line 473, in __exit__
+    c_api.TF_GetCode(self.status.status))
+tensorflow.python.framework.errors_impl.NotFoundError: /home/recolic/tmp/fast_tffm/py/../lib/libfast_tffm.so: undefined symbol: _ZTIN10tensorflow8OpKernelE
+<end of output>
+Test time =   1.27 sec
+----------------------------------------------------------
+Test Failed.
+"test_parser" end time: Feb 28 00:42 CST
+"test_parser" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Feb 28 00:42 CST
